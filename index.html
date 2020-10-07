@@ -9,94 +9,108 @@
 </head>
 
 <body>
-  <nav>
+  <div class="wrapper">
+    <nav>
+      <ul>
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="html5.html">HTML5</a></li>
+        <li><a href="form.html">Forms</a></li>
+        <li><a href="wait.html">Wait But Why</a></li>
+      </ul>
+    </nav>
+    <h1>ZTM Intro - HTML notes</h1>
+    <h2>Section 2: How The Internet Works</h2>
+    <h3>Browsing the web</h3>
+    <p>We type google.com in the broswer, when the request reaches the isp it translates to 172.217.7.23 using a dns
+      server and sends the info back to the browser. </p>
+    <img src="images/isp.PNG" alt="">
+    <p>Now the browser has the correct ip address it can contact Googles servers.</p>
+    <img src="images/isp2.PNG" alt="">
+    <br>
+    <img src="images/isp3.PNG" alt="">
+    <br>
+    <img src="images/isp4.PNG" alt="">
+    <h3>Browsing the web</h3>
+    <img src="images/backbone.jpg" alt="">
+    <h3>What is Traceroute & What is it For?</h3>
+    <p>source: <a href="https://www.thousandeyes.com/learning/glossary/traceroute">thousandeyes</a></p>
+    <p>Traceroute is a network diagnostic tool used to track in real-time the pathway taken by a packet on an IP network
+      from source to destination, reporting the IP addresses of all the routers it pinged in between. Traceroute also
+      records the time taken for each hop the packet makes during its route to the destination.</p>
+    <p>Traceroute is a useful tool for determining the response delays and routing loops present in a network pathway
+      across packet switched nodes. It also helps to locate any points of failure encountered while en route to a
+      certain
+      destination.</p>
+    <p>Ex: on windows pc run: tracert bbc.co.uk</p>
+    <h3>DEVELOPER FUNDAMENTALS: I</h3>
+    <h4>Improve website performance</h4>
+    <p>Based on previous lectures, we can see the kinds of things that would make a performant, fast website/app.</p>
     <ul>
-      <li><a href="index.html">Intro</a></li>
-      <li><a href="html5.html">HTML5</a></li>
-      <li><a href="form.html">Forms</a></li>
-      <li><a href="wait.html">Wait But Why</a></li>
+      <li>location of servers</li>
+      <li>how many trips to the web server</li>
+      <li>size of files being transferred over the internet</li>
     </ul>
-  </nav>
-  <h1>ZTM Intro - HTML notes</h1>
-  <h2>Section 2: How The Internet Works</h2>
-  <h3>Browsing the web</h3>
-  <p>We type google.com in the broswer, when the request reaches the isp it translates to 172.217.7.23 using a dns
-    server and sends the info back to the browser. </p>
-  <img src="images/isp.PNG" alt="">
-  <p>Now the browser has the correct ip address it can contact Googles servers.</p>
-  <img src="images/isp2.PNG" alt="">
-  <br>
-  <img src="images/isp3.PNG" alt="">
-  <br>
-  <img src="images/isp4.PNG" alt="">
-  <h3>Browsing the web</h3>
-  <img src="images/backbone.jpg" alt="">
-  <h3>What is Traceroute & What is it For?</h3>
-  <p>source: <a href="https://www.thousandeyes.com/learning/glossary/traceroute">thousandeyes</a></p>
-  <p>Traceroute is a network diagnostic tool used to track in real-time the pathway taken by a packet on an IP network
-    from source to destination, reporting the IP addresses of all the routers it pinged in between. Traceroute also
-    records the time taken for each hop the packet makes during its route to the destination.</p>
-  <p>Traceroute is a useful tool for determining the response delays and routing loops present in a network pathway
-    across packet switched nodes. It also helps to locate any points of failure encountered while en route to a certain
-    destination.</p>
-  <p>Ex: on windows pc run: tracert bbc.co.uk</p>
-  <h3>DEVELOPER FUNDAMENTALS: I</h3>
-  <h4>Improve website performance</h4>
-  <p>Based on previous lectures, we can see the kinds of things that would make a performant, fast website/app.</p>
-  <ul>
-    <li>location of servers</li>
-    <li>how many trips to the web server</li>
-    <li>size of files being transferred over the internet</li>
-  </ul>
-  <h2>History Of The Web</h2>
-  <h3>www vs internet</h3>
-  <h4>Before the internet, there was the ARPANET</h4>
-  <p>Source: <a href="https://www.vox.com/a/internet-maps">vox.com</a> </p>
-  <p>ARPANET, the precursor to the modern internet, was an academic research project funded by the Advanced Research
-    Projects Agency, a branch of the military known for funding ambitious research projects without immediate commercial
-    or military applications. Initially, the network only connected the University of Utah with three research centers
-    in California. ARPANET was a test of a then-novel technology called packet-switching, which breaks data into small
-    "packets" so they can be transmitted efficiently across the network. It also had a more practical goal: allowing
-    more efficient use of expensive computing resources. Computer scientists sometimes used ARPA money to buy computers,
-    and the agency hoped that ARPANET would allow universities to share these expensive resources more efficiently. One
-    of the first ARPANET applications was Telnet, which allowed a researcher at one ARPANET site to log into a computer
-    at another site.</p>
-  <img src="https://cdn0.vox-cdn.com/assets/4463411/G69Dec.jpg" alt="the ARPANET in 1969">
-  <h4>1984: ARPANET becomes the internet</h4>
-  <p>Originally, the entire ARPANET was managed by the military. But network operators realized that a centralized
-    network would eventually become unmanageable if it continued to grow. They decided that the network should be
-    reorganized as a decentralized "network of networks." Under this scheme, different networks would be controlled by
-    different organizations, but all the networks able to communicate using shared standards, forming a shared
-    "internet." The military asked the computer scientists Robert Kahn and Vint Cerf to develop new networking standards
-    to make this possible. The result was a set of standards known as TCP/IP. These standards specified the basic format
-    of data packets transmitted across the internet. On January 1, 1983, the ARPANET switched to using TCP/IP, marking
-    the birth of the modern internet. The switch to TCP/IP didn't make much difference from a user perspective —
-    applications like email and Telnet worked about the same as they had before. But the new standard paved the way for
-    much faster network growth by lowering the barrier to entry for new networks. One of the first new networks to
-    connect to the new internet was CSNET, which was funded by the National Science Foundation to link computer science
-    departments across the country. This map shows the location of ARPANET and CSNET nodes (labeled "Phonenet"), which
-    after 1983 communicated with each other using TCP/IP. By the time the ARPANET was decommissioned in 1990, it was
-    just one of many networks that comprised the internet. Today, the internet is made up of more than 40,000 different
-    networks. These networks still communicate with each other using the TCP/IP standards Cerf and Kahn developed in the
-    1970s.</p>
-  <h4>What’s difference between The Internet and The Web ?</h4>
-  <p>source: <a href="">geeksforgeeks</a></p>
-  <p>The Internet is a global network of networks while the Web, also referred formally as World Wide Web (www) is
-    collection of information which is accessed via the Internet. Another way to look at this difference is; the
-    Internet is infrastructure while the Web is service on top of that infrastructure. Alternatively, the Internet can
-    be viewed as a big book-store while the Web can be viewed as collection of books on that store. At a high level, we
-    can even think of the Internet as hardware and the Web as software!</p>
-  <h3>DEVELOPER FUNDAMENTALS: II</h3>
-  <p><a href="https://www.w3.org/wiki/The_history_of_the_Web">browser wars, the coming of web standards.</a></p>
-  <h3>Developer History</h3>
-  <img src="images/stack1.PNG" alt="LAMP Stack">
-  <br>
-  <img src="/images/stack2.PNG" alt="Full Stack Javascript">
-  <h3>Optional Resource: More About the History of the Web</h3>
-  <a href="https://www.youtube.com/watch?v=3QhU9jd03a0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=29">Computer
-    Networks</a>
-  <a href="https://www.youtube.com/watch?v=AEaKrq3SpW8&index=30&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">Internet</a>
-  <a href="https://www.youtube.com/watch?v=guvsH5OFizE&index=31&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">WWW</a>
+    <h2>History Of The Web</h2>
+    <h3>www vs internet</h3>
+    <h4>Before the internet, there was the ARPANET</h4>
+    <p>Source: <a href="https://www.vox.com/a/internet-maps">vox.com</a> </p>
+    <p>ARPANET, the precursor to the modern internet, was an academic research project funded by the Advanced Research
+      Projects Agency, a branch of the military known for funding ambitious research projects without immediate
+      commercial
+      or military applications. Initially, the network only connected the University of Utah with three research centers
+      in California. ARPANET was a test of a then-novel technology called packet-switching, which breaks data into small
+      "packets" so they can be transmitted efficiently across the network. It also had a more practical goal: allowing
+      more efficient use of expensive computing resources. Computer scientists sometimes used ARPA money to buy
+      computers,
+      and the agency hoped that ARPANET would allow universities to share these expensive resources more efficiently.
+      One
+      of the first ARPANET applications was Telnet, which allowed a researcher at one ARPANET site to log into a
+      computer
+      at another site.</p>
+    <img src="https://cdn0.vox-cdn.com/assets/4463411/G69Dec.jpg" alt="the ARPANET in 1969">
+    <h4>1984: ARPANET becomes the internet</h4>
+    <p>Originally, the entire ARPANET was managed by the military. But network operators realized that a centralized
+      network would eventually become unmanageable if it continued to grow. They decided that the network should be
+      reorganized as a decentralized "network of networks." Under this scheme, different networks would be controlled by
+      different organizations, but all the networks able to communicate using shared standards, forming a shared
+      "internet." The military asked the computer scientists Robert Kahn and Vint Cerf to develop new networking
+      standards
+      to make this possible. The result was a set of standards known as TCP/IP. These standards specified the basic
+      format
+      of data packets transmitted across the internet. On January 1, 1983, the ARPANET switched to using TCP/IP, marking
+      the birth of the modern internet. The switch to TCP/IP didn't make much difference from a user perspective —
+      applications like email and Telnet worked about the same as they had before. But the new standard paved the way
+      for
+      much faster network growth by lowering the barrier to entry for new networks. One of the first new networks to
+      connect to the new internet was CSNET, which was funded by the National Science Foundation to link computer
+      science
+      departments across the country. This map shows the location of ARPANET and CSNET nodes (labeled "Phonenet"), which
+      after 1983 communicated with each other using TCP/IP. By the time the ARPANET was decommissioned in 1990, it was
+      just one of many networks that comprised the internet. Today, the internet is made up of more than 40,000
+      different
+      networks. These networks still communicate with each other using the TCP/IP standards Cerf and Kahn developed in
+      the
+      1970s.</p>
+    <h4>What’s difference between The Internet and The Web ?</h4>
+    <p>source: <a href="">geeksforgeeks</a></p>
+    <p>The Internet is a global network of networks while the Web, also referred formally as World Wide Web (www) is
+      collection of information which is accessed via the Internet. Another way to look at this difference is; the
+      Internet is infrastructure while the Web is service on top of that infrastructure. Alternatively, the Internet can
+      be viewed as a big book-store while the Web can be viewed as collection of books on that store. At a high level,
+      we
+      can even think of the Internet as hardware and the Web as software!</p>
+    <h3>DEVELOPER FUNDAMENTALS: II</h3>
+    <p><a href="https://www.w3.org/wiki/The_history_of_the_Web">browser wars, the coming of web standards.</a></p>
+    <h3>Developer History</h3>
+    <img src="images/stack1.PNG" alt="LAMP Stack">
+    <br>
+    <img src="/images/stack2.PNG" alt="Full Stack Javascript">
+    <h3>Optional Resource: More About the History of the Web</h3>
+    <a href="https://www.youtube.com/watch?v=3QhU9jd03a0&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo&index=29">Computer
+      Networks</a>
+    <a href="https://www.youtube.com/watch?v=AEaKrq3SpW8&index=30&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">Internet</a>
+    <a href="https://www.youtube.com/watch?v=guvsH5OFizE&index=31&list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo">WWW</a>
+  </div>
 </body>
 
 </html>

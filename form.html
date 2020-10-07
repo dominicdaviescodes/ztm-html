@@ -9,96 +9,100 @@
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Intro</a></li>
-      <li><a href="html5.html">HTML5</a></li>
-      <li><a href="form.html">Forms</a></li>
-      <li><a href="wait.html">Wait But Why</a></li>
-    </ul>
-  </nav>
-  <h1>ZTM Intro - HTML Forms</h1>
-  <p>source: <a
-      href="https://www.dummies.com/web-design-development/site-development/how-to-create-a-drop-down-list-in-an-html5-form/">dropdowns.</a>
-    and <a
-      href="https://www.dummies.com/web-design-development/html5/how-to-use-password-fields-and-hidden-fields-in-your-html5-form/">password
-      field</a>
-  </p>
-  <p>source: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form">mdn</a> </p>
-  <p>The form element formally defines a form and attributes that determine the form's behavior. Each time you want to
-    create an HTML form, you must start it by using this element, nesting all the contents inside. Many assistive
-    technologies and browser plugins can discover form elements and implement special hooks to make them easier to
-    use.</p>
-  <br>
-  <form>
-    <div>
-      <label for="first_name">First Name:
-        <input type="text" name="first_name" id="first_name">
-      </label>
-    </div>
-    <div>
-      <label for="last_name">Last Name:
-        <input type="text" name="last_name" id="last_name">
-      </label>
-    </div>
-    <div>
-      <label for="email">Email:
-        <input type="email" name="email" id="email" required>
-      </label>
-    </div>
-    <div>
-      <label for="birthday">Birthday:
-        <input type="date" name="birthday" id="birthday" required>
-      </label>
-    </div>
-    <div>
-      <label>Password: <input type="password" name="psswd" size="30" maxlength="25"></label>
-    </div>
-    <label>
-      <input type="radio" name="gender" value="male">Male
-    </label>
-    <label>
-      <input type="radio" name="gender" value="female">Female
-    </label>
-    <label>
-      <input type="radio" name="gender" value="other_gender">Other
-    </label>
-    Pets:
-    <label for="cat"><input id="cat" type="checkbox" name="pet"> cat</label>
-    <label for="dog"><input id="dog" type="checkbox" name="pet"> dog</label>
-    <fieldset>
-      <legend>Cars</legend>
-      <p>
-        <label>Choose Manufacturer:</label>
-        <select id="myList" name="cars">
-          <option value="volvo">volvo</option>
-          <option value="audi">audi</option>
-          <option value="3">three</option>
-          <option value="4">four</option>
-        </select>
-      </p>
-    </fieldset>
-    <input type="submit" value="Send">
-    <input type="reset" value="Clear">
-  </form>
-  <h2>query string - sends form info to the back end</h2>
-  form.html? <br>
-  first_name=Dom <br>
-  &last_name=Davies <br>
-  &email=dom.davies%40hotmail.com <br>
-  &birthday=1969-12-01 <br>
-  &psswd=TestPassword1" <br>
-  &gender=on <br>
-  &pet=on
+  <div class="wrapper">
+    <nav>
+      <ul>
+        <li><a href="index.html">Intro</a></li>
+        <li><a href="html5.html">HTML5</a></li>
+        <li><a href="form.html">Forms</a></li>
+        <li><a href="wait.html">Wait But Why</a></li>
+      </ul>
+    </nav>
 
-  <h3>query string after form improvements</h3>
-  ?first_name=dom <br>
-  &last_name=davies <br>
-  &email=dom.davies%40hotmail.com <br>
-  &birthday=2015-12-31 <br>
-  &psswd=12345678 <br>
-  &gender=male <br>
-  &pet=on <br>
-  &cars=volvo
+    <h1>ZTM Intro - HTML Forms</h1>
+    <p>source: <a
+        href="https://www.dummies.com/web-design-development/site-development/how-to-create-a-drop-down-list-in-an-html5-form/">dropdowns.</a>
+      and <a
+        href="https://www.dummies.com/web-design-development/html5/how-to-use-password-fields-and-hidden-fields-in-your-html5-form/">password
+        field</a>
+    </p>
+    <p>source: <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form">mdn</a> </p>
+    <p>The form element formally defines a form and attributes that determine the form's behavior. Each time you want to
+      create an HTML form, you must start it by using this element, nesting all the contents inside. Many assistive
+      technologies and browser plugins can discover form elements and implement special hooks to make them easier to
+      use.</p>
+    <br>
+    <form>
+      <div>
+        <label for="first_name">First Name:
+          <input type="text" name="first_name" id="first_name">
+        </label>
+      </div>
+      <div>
+        <label for="last_name">Last Name:
+          <input type="text" name="last_name" id="last_name">
+        </label>
+      </div>
+      <div>
+        <label for="email">Email:
+          <input type="email" name="email" id="email" required>
+        </label>
+      </div>
+      <div>
+        <label for="birthday">Birthday:
+          <input type="date" name="birthday" id="birthday" required>
+        </label>
+      </div>
+      <div>
+        <label>Password: <input type="password" name="psswd" size="30" maxlength="25"></label>
+      </div>
+      <label>
+        <input type="radio" name="gender" value="male">Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female">Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="other_gender">Other
+      </label>
+      Pets:
+      <label for="cat"><input id="cat" type="checkbox" name="pet"> cat</label>
+      <label for="dog"><input id="dog" type="checkbox" name="pet"> dog</label>
+      <fieldset>
+        <legend>Cars</legend>
+        <p>
+          <label>Choose Manufacturer:</label>
+          <select id="myList" name="cars">
+            <option value="volvo">volvo</option>
+            <option value="audi">audi</option>
+            <option value="3">three</option>
+            <option value="4">four</option>
+          </select>
+        </p>
+      </fieldset>
+      <input type="submit" value="Send">
+      <input type="reset" value="Clear">
+    </form>
+    <h2>query string - sends form info to the back end</h2>
+    form.html? <br>
+    first_name=Dom <br>
+    &last_name=Davies <br>
+    &email=dom.davies%40hotmail.com <br>
+    &birthday=1969-12-01 <br>
+    &psswd=TestPassword1" <br>
+    &gender=on <br>
+    &pet=on
 
+    <h3>query string after form improvements</h3>
+    ?first_name=dom <br>
+    &last_name=davies <br>
+    &email=dom.davies%40hotmail.com <br>
+    &birthday=2015-12-31 <br>
+    &psswd=12345678 <br>
+    &gender=male <br>
+    &pet=on <br>
+    &cars=volvo
+  </div>
 </body>
+
+</html>
